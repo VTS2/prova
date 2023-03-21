@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Roupas de Goiânia</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+
+	</head>
+	<body>
+
+		<header>
+			<div class="container">
+				<h2 class="titulo">Administrador</h2>
+			</div>
+		</header>
+		<main>
+			<section class="container">
+				<h2>Meus produtos</h2>
+				<label for="filtrar-tabela">Filtre:</label>
+				<input type="text" name="filtro" id="filtrar-tabela" placeholder="Digite o nome do produto">
+				<table>
+					<thead>
+						<tr>
+							<th>Nome do Produto</th>
+							<th>Quantidade disponivel</th>
+							<th>Preço Unitario</th>
+							<th>Starus de Venda</th>
+						</tr>
+					</thead>
+					<tbody id="tabelaDeProdutos">
+						<tr class="paciente" id="primeiro-paciente">
+							<td class="a">Camisa vermelha</td>
+							<td class="b">1000</td>
+							<td class="c">100</td>
+							<td class="d"></td>
+						</tr>
+
+					</tbody>
+				</table>
+				<span id="erro-ajax" class="invisivel">Erro ao buscar os produtos</span>
+
+				<button id="buscar-pacientes" class="botao bto-principal">Buscar produtos</button>
+
+			</section>
+		</main>
+
+		<section class="container">
+		    <h2 id="titulo-form">Adicionar novo produto</h2>
+			<ul id="mensagens-erro"></ul>
+		    <form id="form-adiciona">
+		        <div class="">
+		            <label for="nada">Nome do Produto:</label>
+		            <input id="nomeProduto" name="nomeProduto" type="text" placeholder="digite o produto" class="campo">
+		        </div>
+		        <div class="grupo">
+		            <label for="nada">Quantidade disponivel:</label>
+		            <input id="qtDesponivel" name="qtDesponivel" type="number" placeholder="digite a quantidade disponivel" class="campo campo-medio">
+		        </div>
+		        <div class="grupo">
+		            <label for="nada">Preço Unitario:</label>
+		            <input id="preUnitario" name="preUnitario" type="number" placeholder="digite o Preço Unitario" class="campo campo-medio">
+		        </div>
+		        <div class="grupo">
+		            <label for="nada">Starus de Venda:</label>
+		            <input id="stsProduto" name="stsProduto" type="text" placeholder="digite o Starus de Venda" class="campo campo-medio">
+		        </div>
+
+		        <button id="adicionar-paciente" class="botao bto-principal">Adicionar Produtos</button>
+		    </form>
+		</section>
+
+		<script src="js/formADD.js"></script>
+		<script src="js/delete.js"></script>
+
+	</body>
+</html>
