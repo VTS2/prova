@@ -1,0 +1,3 @@
+Você conseguiu criar o documento em HTML conforme solicitado, linkou corretamente o script e fez parte das funcionalidades, os dados não estão sendo eviados por um erro na função montarTr, pos não está passando os nomes corretos das variaveis.
+Seu CSS foi correto. 
+Seu nivel é 4 e sua nota foi 4,3
